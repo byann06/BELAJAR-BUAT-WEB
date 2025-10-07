@@ -23,7 +23,7 @@ body {
 
 /* Background baru untuk mode tutorial */
 body.tutorial-mode {
-    background: url(assets/img/bgG.gif) no-repeat center center / cover;
+    background: url(assets/img/bg-tutorrr.gif) no-repeat center center / cover;
 }
 
 
@@ -46,7 +46,7 @@ body.tutorial-mode {
 }
 
 .container span {
-    font-size: 12px;
+    margin: 10px;
 }
 
 .container a {
@@ -73,6 +73,7 @@ body.tutorial-mode {
 .container button.hidden {
     background-color: transparent;
     border-color: #fff;
+    margin-top: 40px;
 }
 
 .container form {
@@ -266,7 +267,7 @@ label:last-child span {
 
 .toggle-left {
     transform: translateX(-200%);
-     background: rgba(78, 9, 9, 0.473);
+     background: rgba(138, 136, 23, 0.473);
 }
 
 .container.active .toggle-left {
@@ -285,7 +286,6 @@ label:last-child span {
 
 /* Tutorial panel */
 .tutorial {
-    
     position: absolute;
     top: 0;
     left: 0;
@@ -305,7 +305,7 @@ label:last-child span {
     text-align: center;
 
     color: #000;
-    background-color: rgba(255, 255, 255, 0.8);
+   
     border-radius: 20px;
     padding: 30px;
 }
@@ -366,16 +366,24 @@ label:last-child span {
 /* HP kecil (kurang dari 480px) */
 @media (max-width: 480px) {
     .container {
+        transform: scale(0.6);
+        transform-origin: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
         transform: scale(0.5);
         transform-origin: center;
     }
 }
 
 
+
 /* HP sangat kecil (kurang dari 400px) */
-@media (max-width: 400px) {
+@media (max-width: 350px) {
     .container {
-        transform: scale(0.55);
+        transform: scale(0.4);
         transform-origin: center;
     }
 }
