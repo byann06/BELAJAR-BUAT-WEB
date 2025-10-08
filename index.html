@@ -1,80 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style2.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style2.css" />
     <title>Form Login Byan</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <video autoplay loop>
-        <!-- <source src="assets/img/bg-tutor.mp4" type="video/mp4" /> -->
+      <!-- <source src="assets/img/bg-tutor.mp4" type="video/mp4" /> -->
     </video>
     <div class="container" id="container">
-        <!-- FORM LOGIN -->
-        <div class="form-container sign-in">
-            <form>
-                <h1>Masukkan Nama Dan Gender</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>Masukkan Nama dan Gender disini</span>
-                <input type="text" id="nama" placeholder="Masukkan Nama Disini">
+      <!-- FORM LOGIN -->
+      <div class="form-container sign-in">
+        <form>
+          <h1>Masukkan Nama Dan Gender</h1>
+          <div class="social-icons">
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+          <span>Masukkan Nama dan Gender disini</span>
+          <input type="text" id="nama" placeholder="Masukkan Nama Disini" />
 
-                <div class="mydict">
-                    <div id="gender">
-                        <label>
-                            <input type="radio" name="radio" value="ABANG" checked>
-                            <span>Cowok</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="radio" value="KAKAK">
-                            <span>Cewek</span>
-                        </label>
-                    </div>
-                </div>
-                <button type="button" onclick="masukWeb()">Masuk</button>
-            </form>
-        </div>
-
-        <!-- PANEL TUTORIAL (DILUAR FORM LOGIN) -->
-        <div class="form-container tutorial" id="tutorial">
-            <div class="tutorial-content">
-                <h1>Tutorial Penggunaan</h1>
-                <p>
-                    1. Masukkan nama dan gender di halaman login.<br>
-                    2. Setelah itu klik tombol “Masuk”.<br>
-                    3. Kamu bisa melihat berbagai fitur menarik di halaman berikutnya! 😄
-                </p>
+          <div class="mydict">
+            <div id="gender">
+              <label>
+                <input type="radio" name="radio" value="ABANG" checked />
+                <span>Cowok</span>
+              </label>
+              <label>
+                <input type="radio" name="radio" value="KAKAK" checked />
+                <span>Cewek</span>
+              </label>
             </div>
-        </div>
+          </div>
+          <button type="button" onclick="masukWeb()">Masuk</button>
+        </form>
+      </div>
 
-        <!-- PANEL BIRU (TOGGLE-CONTAINER) -->
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Buat apasih form ini? </h1>
-                    <p> jadi nama yang kalian masukan akan tampil di halaman selanjutnya ,dan gender yg kalian pilih jika cowok berubah menjadi = abang, dan jika cewek menjadi = KAKAK </p>
-                    <img class="tutor-img" src="assets/img/tutor-img.jpg" alt="tutor">
-                    <button class="hidden" id="login">Balik Ke Form Login Pencet Disini</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Halo Abang/Kaka😄</h1>
-                    <p>Selamat Datang teman teman Ini adalah Fun Web ,Semoga Suka ya hehe</p>
-                    <h5><span>Jangan Lupa untuk Menggunakan Situs Dekstop untuk 100% exprience .Terima kasih  :)</span></h5>
-                    <button class="hidden" id="register">Tutorial? Pencet Disini</button>
-                </div>
-            </div>
+      <!-- PANEL TUTORIAL (DILUAR FORM LOGIN) -->
+      <div class="form-container tutorial" id="tutorial">
+        <div class="tutorial-content">
+          <h1>Tutorial Penggunaan</h1>
+          <p>
+            1. Masukkan nama dan gender di halaman login.<br />
+            2. Setelah itu klik tombol “Masuk”.<br />
+            3. Kamu bisa melihat berbagai fitur menarik di halaman berikutnya!
+            😄
+          </p>
         </div>
+      </div>
+
+      <!-- PANEL BIRU (TOGGLE-CONTAINER) -->
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Buat apasih form ini?</h1>
+            <p>
+              jadi nama yang kalian masukan akan tampil di halaman selanjutnya
+              ,dan gender yg kalian pilih jika cowok berubah menjadi = abang,
+              dan jika cewek menjadi = KAKAK
+            </p>
+            <img class="tutor-img" src="assets/img/tutor-img.jpg" alt="tutor" />
+            <button class="hidden" id="login">
+              Balik Ke Form Login Pencet Disini
+            </button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Halo Abang/Kaka😄</h1>
+            <p>
+              Selamat Datang teman teman Ini adalah Fun Web ,Semoga Suka ya hehe
+            </p>
+            <h5>
+              <span
+                >Jangan Lupa untuk Menggunakan Situs Dekstop untuk 100%
+                exprience .Terima kasih :)</span
+              >
+            </h5>
+            <button class="hidden" id="register">
+              Tutorial? Pencet Disini
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="song-info">
+      <audio id="bg-music" src="assets/mp3/8letter.mp3" controls autoplay loop></audio>
+        <p class="song-artist">8 - letters</p>
+        <p class="song-title">wh'y don't me</p>
     </div>
 
-    <audio id="bg-music" src="assets/mp3/8letter.mp3" autoplay loop></audio>
     <script src="interaksi.js"></script>
-</body>
+  </body>
 </html>

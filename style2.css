@@ -23,7 +23,8 @@ body {
 
 /* Background baru untuk mode tutorial */
 body.tutorial-mode {
-    background: url(assets/img/bg-tutorrr.gif) no-repeat center center / cover;
+    background: url(assets/img/mata-cewe.gif) no-repeat center center / cover;
+
 }
 
 
