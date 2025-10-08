@@ -46,19 +46,17 @@ window.addEventListener("DOMContentLoaded", () => {
   audio.loop = true;
 
   // Tentukan lagu sesuai halaman
-  if (window.location.pathname.includes("halaman.html")) {
-    audio.src = "assets/mp3/december.mp3";
-  } else if (window.location.pathname.includes("index.html")) {
-    audio.src = "assets/mp3/8letters.mp3";
-  } else if (window.location.pathname.includes("wa.html")) {
-    audio.src = "assets/mp3/multo.mp3";
-  } else if (window.location.pathname.includes("tele.html")) {
-    audio.src = "assets/mp3/consume.mp3";
-  } 
+  // if (window.location.pathname.includes("halaman.html")) {
+  //   audio.src = "assets/mp3/december.mp3";
+  // } else if (window.location.pathname.includes("index.html")) {
+  //   audio.src = "assets/mp3/8letters.mp3";
+  // } else if (window.location.pathname.includes("wa.html")) {
+  //   audio.src = "assets/mp3/multo.mp3";
+  // } else if (window.location.pathname.includes("tele.html")) {
+  //   audio.src = "assets/mp3/consume.mp3";
+  // } 
     
-
-
-  document.body.appendChild(audio);
+  // document.body.appendChild(audio);
 
   // tombol play musik
   const playBtn = document.getElementById("play-btn");
